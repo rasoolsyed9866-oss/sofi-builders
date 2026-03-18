@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sofi Builders</title>
+<title>Sofi Builders and Developers</title>
 
 <style>
 body { margin:0; font-family:Arial; scroll-behavior:smooth; }
@@ -17,11 +17,7 @@ header {
   align-items:center;
 }
 
-.logo {
-  color:gold;
-  font-size:22px;
-  font-weight:bold;
-}
+header h1 { color:gold; }
 
 nav a {
   color:white;
@@ -39,9 +35,18 @@ nav a {
   color:white;
 }
 
+.hero h2 { font-size:45px; }
+
+button {
+  padding:12px 25px;
+  background:gold;
+  border:none;
+  cursor:pointer;
+}
+
 .section { padding:50px; text-align:center; }
 
-.services, .gallery {
+.services {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
@@ -55,31 +60,28 @@ nav a {
   border-radius:10px;
 }
 
+/* Gallery */
+.gallery {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
 .gallery img {
   width:300px;
   margin:10px;
   border-radius:10px;
 }
 
-input, textarea {
-  width:80%;
-  padding:10px;
-  margin:10px;
-}
-
-button {
-  padding:10px 20px;
-  background:gold;
-  border:none;
-  cursor:pointer;
-}
-
+/* Footer */
 footer {
   background:#111;
   color:white;
+  text-align:center;
   padding:20px;
 }
 
+/* WhatsApp */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -89,6 +91,7 @@ footer {
   padding:15px;
   border-radius:50%;
   text-decoration:none;
+  font-size:20px;
 }
 </style>
 </head>
@@ -96,7 +99,7 @@ footer {
 <body>
 
 <header>
-  <div class="logo">🏗️ Sofi Builders</div>
+  <h1>Sofi Builders</h1>
   <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -108,6 +111,7 @@ footer {
 <section id="home" class="hero">
   <div>
     <h2>We Build Your Dream</h2>
+    <p>Trusted Construction Company</p>
     <button onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
   </div>
 </section>
@@ -115,9 +119,18 @@ footer {
 <section id="services" class="section">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card">Home Construction</div>
-    <div class="card">Interior Design</div>
-    <div class="card">Renovation</div>
+    <div class="card">
+      <h3>Home Construction</h3>
+      <p>Modern homes with quality.</p>
+    </div>
+    <div class="card">
+      <h3>Interior Design</h3>
+      <p>Stylish interiors.</p>
+    </div>
+    <div class="card">
+      <h3>Renovation</h3>
+      <p>Upgrade your space.</p>
+    </div>
   </div>
 </section>
 
@@ -132,28 +145,14 @@ footer {
 
 <section id="contact" class="section">
   <h2>Contact Us</h2>
-
-  <!-- Contact Form -->
-  <form>
-    <input type="text" placeholder="Your Name" required><br>
-    <input type="email" placeholder="Your Email" required><br>
-    <textarea placeholder="Your Message" required></textarea><br>
-    <button type="submit">Send</button>
-  </form>
-
-  <!-- Google Map -->
-  <iframe 
-    src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="100%" height="300" style="border:0;">
-  </iframe>
-
+  <p>Email: sofibuilders@gmail.com</p>
+  <p>Phone: +91 7780263982</p>
 </section>
 
 <footer>
   <p>© 2026 Sofi Builders</p>
 </footer>
 
-<!-- WhatsApp -->
 <a class="whatsapp" href="https://wa.me/917780263982" target="_blank">💬</a>
 
 </body>
