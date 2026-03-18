@@ -1,85 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sofi Builders and Developers</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofi Builders and Developers</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+<style>
+body { margin:0; font-family:Arial; scroll-behavior:smooth; }
 
-    header {
-      background: #111;
-      color: white;
-      padding: 15px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+header {
+  background:#111;
+  color:white;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-    header h1 {
-      margin: 0;
-      color: gold;
-    }
+header h1 { color:gold; margin:0; }
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
+nav a {
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
-      height: 90vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
+.hero {
+  background:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
 
-    .hero h2 {
-      font-size: 50px;
-    }
+.hero h2 { font-size:45px; }
 
-    .section {
-      padding: 50px;
-      text-align: center;
-    }
+button {
+  padding:12px 25px;
+  background:gold;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+}
 
-    .services {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+.section { padding:50px; text-align:center; }
 
-    .card {
-      width: 250px;
-      padding: 20px;
-      margin: 15px;
-      box-shadow: 0 0 10px gray;
-      border-radius: 10px;
-    }
+.services {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+.card {
+  width:250px;
+  margin:15px;
+  padding:20px;
+  box-shadow:0 0 10px gray;
+  border-radius:10px;
+}
 
-    button {
-      padding: 10px 20px;
-      background: gold;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-    }
+footer {
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
 
-  </style>
+/* WhatsApp Button */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
+</style>
 </head>
 
 <body>
@@ -87,55 +88,62 @@
 <header>
   <h1>Sofi Builders</h1>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
+<section id="home" class="hero">
   <div>
     <h2>We Build Your Dream</h2>
     <p>Trusted Construction Company</p>
-    <button>Contact Us</button>
+    <button onclick="scrollToContact()">Contact Us</button>
   </div>
 </section>
 
-<section class="section">
+<section id="services" class="section">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
       <h3>Home Construction</h3>
-      <p>We build modern homes with quality.</p>
+      <p>Modern homes with quality.</p>
     </div>
-
     <div class="card">
       <h3>Interior Design</h3>
-      <p>Stylish and smart interiors.</p>
+      <p>Stylish interiors.</p>
     </div>
-
     <div class="card">
       <h3>Renovation</h3>
-      <p>Upgrade your old spaces.</p>
+      <p>Upgrade your space.</p>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section id="projects" class="section">
   <h2>Our Projects</h2>
   <p>Coming Soon...</p>
 </section>
 
-<section class="section">
+<section id="contact" class="section">
   <h2>Contact Us</h2>
   <p>Email: sofibuilders@gmail.com</p>
-  <p>Phone: +91 XXXXX XXXXX</p>
+  <p>Phone: +91 7780263982</p>
 </section>
 
 <footer>
-  <p>© 2026 Sofi Builders and Developers</p>
+  <p>© 2026 Sofi Builders</p>
 </footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/917780263982" target="_blank">💬</a>
+
+<script>
+function scrollToContact() {
+  document.getElementById("contact").scrollIntoView();
+}
+</script>
 
 </body>
 </html>
