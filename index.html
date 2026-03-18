@@ -1,36 +1,85 @@
-.gallery {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofi Builders and Developers</title>
 
-.gallery img {
-  width:300px;
-  margin:10px;
-  border-radius:10px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-/* Footer */
-footer {
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-/* WhatsApp */
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:20px;
-}
-</style>
+    header h1 {
+      margin: 0;
+      color: gold;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 50px;
+    }
+
+    .section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 250px;
+      padding: 20px;
+      margin: 15px;
+      box-shadow: 0 0 10px gray;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: gold;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -38,59 +87,55 @@ footer {
 <header>
   <h1>Sofi Builders</h1>
   <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
   </nav>
 </header>
 
-<section id="home" class="hero">
+<section class="hero">
   <div>
     <h2>We Build Your Dream</h2>
     <p>Trusted Construction Company</p>
-    <button onclick="document.getElementById('contact').scrollIntoView()">Contact Us</button>
+    <button>Contact Us</button>
   </div>
 </section>
 
-<section id="services" class="section">
+<section class="section">
   <h2>Our Services</h2>
   <div class="services">
     <div class="card">
       <h3>Home Construction</h3>
-      <p>Modern homes with quality.</p>
+      <p>We build modern homes with quality.</p>
     </div>
+
     <div class="card">
       <h3>Interior Design</h3>
-      <p>Stylish interiors.</p>
+      <p>Stylish and smart interiors.</p>
     </div>
+
     <div class="card">
       <h3>Renovation</h3>
-      <p>Upgrade your space.</p>
+      <p>Upgrade your old spaces.</p>
     </div>
   </div>
 </section>
 
-<section id="projects" class="section">
+<section class="section">
   <h2>Our Projects</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-    <img src="https://images.unsplash.com/photo-1507089947367-19c1da9775ae">
-    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
-  </div>
+  <p>Coming Soon...</p>
 </section>
 
-<section id="contact" class="section">
+<section class="section">
   <h2>Contact Us</h2>
   <p>Email: sofibuilders@gmail.com</p>
-  <p>Phone: +91 7780263982</p>
+  <p>Phone: +917780263982</p>
 </section>
 
 <footer>
-  <p>© 2026 Sofi Builders</p>
+  <p>© 2026 Sofi Builders and Developers</p>
 </footer>
-
-<a class="whatsapp" href="https://wa.me/917780263982" target="_blank">💬</a>
 
 </body>
 </html>
