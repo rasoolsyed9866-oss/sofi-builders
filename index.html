@@ -8,27 +8,24 @@
 <style>
 body {
   margin:0;
-  font-family:Arial;
-  background:#0f0f0f;
-  color:white;
+  font-family: Arial, sans-serif;
+  background:#ffffff;
+  color:#333;
 }
 
 /* HEADER */
 header {
+  background:#222;
+  color:white;
+  padding:15px;
   text-align:center;
-  padding:20px;
-  background:black;
-  border-bottom:2px solid gold;
 }
 
-header h1 {
-  color:gold;
-}
-
-/* HERO */
-.hero {
-  background:url('building.jpg') no-repeat center/cover;
+/* HERO IMAGE */
+.hero img {
+  width:100%;
   height:300px;
+  object-fit:cover;
 }
 
 /* SECTION */
@@ -40,67 +37,42 @@ header h1 {
 /* SERVICES */
 .services {
   display:flex;
-  flex-wrap:wrap;
   justify-content:center;
   gap:15px;
+  flex-wrap:wrap;
 }
 
 .card {
-  background:#1a1a1a;
+  background:#f5f5f5;
   padding:15px;
   width:200px;
+  border-radius:8px;
+}
+
+/* IMAGE */
+.main-img {
+  width:90%;
+  max-width:400px;
   border-radius:10px;
-  border:1px solid gold;
-  transition:0.3s;
-}
-
-.card:hover {
-  transform:scale(1.05);
-}
-
-/* GALLERY */
-.gallery {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-}
-
-.gallery img {
-  width:100%;
-  max-width:300px;
-  margin:10px;
-  border-radius:10px;
-  border:2px solid gold;
+  margin-top:10px;
 }
 
 /* BUTTON */
 .btn {
-  background:gold;
-  color:black;
+  display:inline-block;
+  background:#25D366;
+  color:white;
   padding:10px 15px;
   text-decoration:none;
   border-radius:5px;
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:green;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
-}
-
 /* FOOTER */
 footer {
-  background:black;
+  background:#222;
+  color:white;
   text-align:center;
   padding:10px;
-  border-top:2px solid gold;
 }
 </style>
 </head>
@@ -109,43 +81,44 @@ footer {
 
 <header>
   <h1>Sofi Builders and Developers</h1>
-  <p>Premium Construction Services 🏗️</p>
+  <p>We Build Your Dreams</p>
 </header>
 
-<div class="hero"></div>
-
-<div class="section">
-  <h2>About Us</h2>
-  <p>We build modern homes, buildings and provide trusted construction services.</p>
+<!-- HERO -->
+<div class="hero">
+  <img src="building.jpg">
 </div>
 
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Us</h2>
+  <p>We provide quality construction services with trust and experience.</p>
+</div>
+
+<!-- SERVICES -->
 <div class="section">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card">🏠 House Construction</div>
-    <div class="card">🏢 Commercial Buildings</div>
-    <div class="card">🛠 Renovation</div>
+    <div class="card">House Construction</div>
+    <div class="card">Building Work</div>
+    <div class="card">Renovation</div>
   </div>
 </div>
 
+<!-- REAL IMAGE -->
 <div class="section">
   <h2>Our Work</h2>
-  <div class="gallery">
-    <img src="building.jpg">
-    <img src="building.jpg">
-    <img src="building.jpg">
-  </div>
+  <img src="building.jpg" class="main-img">
 </div>
 
+<!-- CONTACT -->
 <div class="section">
-  <h2>Contact Us</h2>
-  <a class="btn" href="https://wa.me/917780263982">WhatsApp Now</a>
+  <h2>Contact</h2>
+  <a class="btn" href="https://wa.me/917780263982">Chat on WhatsApp</a>
 </div>
-
-<a class="whatsapp" href="https://wa.me/917780263983">💬</a>
 
 <footer>
-  <p>© 2026 Sofi Builders and Developers</p>
+  <p>© 2026 Sofi Builders</p>
 </footer>
 
 </body>
