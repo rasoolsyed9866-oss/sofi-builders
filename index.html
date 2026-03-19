@@ -22,10 +22,6 @@ body {
   align-items:center;
 }
 
-.nav h2 {
-  margin:0;
-}
-
 .nav a {
   color:white;
   text-decoration:none;
@@ -33,26 +29,10 @@ body {
 }
 
 /* HERO */
-.hero {
-  position:relative;
-}
-
 .hero img {
   width:100%;
   height:400px;
   object-fit:cover;
-}
-
-.hero-text {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  color:white;
-  text-align:center;
-  background:rgba(0,0,0,0.6);
-  padding:20px;
-  border-radius:10px;
 }
 
 /* SECTION */
@@ -81,12 +61,12 @@ body {
   transform:translateY(-5px);
 }
 
-/* IMAGE */
-.main-img {
-  width:90%;
-  max-width:500px;
+/* GALLERY */
+.gallery img {
+  width:100%;
+  max-width:300px;
+  margin:10px;
   border-radius:10px;
-  margin-top:15px;
 }
 
 /* BUTTON */
@@ -97,19 +77,6 @@ body {
   border-radius:30px;
   text-decoration:none;
   font-weight:bold;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
 }
 
 /* FOOTER */
@@ -136,11 +103,7 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <img src="building.jpg">
-  <div class="hero-text">
-    <h1>Sofi Builders & Developers</h1>
-    <p>We Build Strong & Modern Homes</p>
-  </div>
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
 </div>
 
 <!-- ABOUT -->
@@ -159,10 +122,14 @@ footer {
   </div>
 </div>
 
-<!-- WORK -->
+<!-- GALLERY -->
 <div class="section">
   <h2>Our Work</h2>
-  <img src="building.jpg" class="main-img">
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+  </div>
 </div>
 
 <!-- CONTACT -->
@@ -170,9 +137,6 @@ footer {
   <h2>Contact Us</h2>
   <a class="btn" href="https://wa.me/917780263982">Chat on WhatsApp</a>
 </div>
-
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/917780263982">💬</a>
 
 <footer>
   <p>© 2026 Sofi Builders and Developers</p>
