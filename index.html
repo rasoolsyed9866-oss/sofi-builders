@@ -1,57 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sofi Builders and Developers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Sofi Builders and Developers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #f5f5f5;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+/* HEADER */
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
+  height: 250px;
+}
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') no-repeat center/cover;
-      height: 250px;
-    }
+/* SECTION */
+.section {
+  padding: 20px;
+  text-align: center;
+}
 
-    .content {
-      padding: 20px;
-      text-align: center;
-    }
+/* SERVICES */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background: green;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
+.card {
+  background: white;
+  padding: 15px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+/* GALLERY */
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.btn {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+</style>
 </head>
 
 <body>
@@ -63,15 +97,42 @@
 
 <div class="hero"></div>
 
-<div class="content">
-  <h2>Welcome</h2>
-  <p>We provide best construction services with quality and trust.</p>
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Us</h2>
+  <p>We provide high-quality construction services with trust and experience.</p>
+</div>
 
-  <!-- WhatsApp Button -->
-  <a class="btn" href="https://wa.me/917780263982" target="_blank">
-    Contact on WhatsApp
+<!-- SERVICES -->
+<div class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">🏗️ House Construction</div>
+    <div class="card">🏢 Building Work</div>
+    <div class="card">🛠️ Renovation</div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Contact Us</h2>
+  <a class="btn" href="https://wa.me/917780263983" target="_blank">
+    Chat on WhatsApp
   </a>
 </div>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/917780263982" target="_blank">💬</a>
 
 <footer>
   <p>© 2026 Sofi Builders and Developers</p>
