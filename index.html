@@ -2,129 +2,131 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sofi Builders and Developers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofi Builders and Developers</title>
 
 <style>
-body { margin:0; font-family:'Segoe UI', sans-serif; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-/* NAVBAR */
-.nav { background:#000; color:white; padding:15px; display:flex; justify-content:space-between; align-items:center; }
-.nav a { color:white; text-decoration:none; margin-left:15px; }
+/* Header */
+header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
 
-/* SLIDER */
-.slider { position:relative; height:100vh; overflow:hidden; }
-.slides { display:flex; width:300%; animation:slide 12s infinite; transition:0.5s ease; }
-.slides img { width:100%; height:100vh; object-fit:cover; }
+/* Hero Section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1503387762-592deb58ef4e") no-repeat center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
 
-@keyframes slide { 0% {margin-left:0;} 33% {margin-left:-100%;} 66% {margin-left:-200%;} }
+.hero h1 {
+  font-size: 40px;
+}
 
-/* OVERLAY */
-.overlay { position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.5); top:0; }
+.btn {
+  background: green;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-/* HERO TEXT */
-.hero-text { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:white; }
-.hero-text h1 { font-size:60px; margin:0; }
-.hero-text p { font-size:22px; margin-top:10px; }
-.hero-text .btn { background:#25D366; color:white; padding:18px 40px; border-radius:30px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:20px; }
+/* Sections */
+section {
+  padding: 40px;
+  text-align: center;
+}
 
-/* SECTION */
-.section { padding:60px 20px; text-align:center; }
-.section:nth-child(even){ background:#f9f9f9; }
+.services {
+  background: #f5f5f5;
+}
 
-/* SERVICES */
-.services { display:flex; gap:25px; justify-content:center; flex-wrap:wrap; }
-.card { background:white; padding:25px; width:250px; border-radius:12px; box-shadow:0 0 15px rgba(0,0,0,0.1); transition:0.3s; }
-.card:hover { transform:scale(1.05); }
+.service-box {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  display: inline-block;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-/* GALLERY */
-.gallery { display:flex; gap:15px; justify-content:center; flex-wrap:wrap; }
-.gallery img { width:100%; max-width:320px; border-radius:12px; transition:0.3s; cursor:pointer; }
-.gallery img:hover { transform:scale(1.1); }
+/* Gallery */
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+}
 
-/* MAP */
-iframe { width:100%; height:300px; border:0; }
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
 
-/* WHATSAPP FLOAT */
-.whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:18px; border-radius:50%; text-decoration:none; font-size:22px; }
-
-/* FOOTER */
-footer { background:#000; color:white; padding:25px; text-align:center; }
-
-/* LOGO */
-.logo { width:140px; height:auto; margin-right:20px; }
-.nav h2 { display:flex; align-items:center; }
+/* WhatsApp button */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
 </style>
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="nav">
-  <h2><img src="https://via.placeholder.com/140x50?text=Logo" class="logo"> Sofi Builders</h2>
-  <div>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
-  </div>
+<header>
+  <h1>Sofi Builders & Developers</h1>
+  <p>We Build Your Dream</p>
+</header>
+
+<div class="hero">
+  <h1>Welcome to Sofi Builders</h1>
+  <p>Best Construction Services in Your City</p>
+  <a class="btn" href="https://wa.me/917780263982">Contact on WhatsApp</a>
 </div>
 
-<!-- SLIDER -->
-<div class="slider">
-  <div class="slides">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
-    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
-  </div>
-  <div class="overlay"></div>
-  <div class="hero-text">
-    <h1>Sofi Builders & Developers</h1>
-    <p>We Build Strong & Modern Homes</p>
-    <a class="btn" href="https://wa.me/917780263982">Contact on WhatsApp</a>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<div class="section">
+<section>
   <h2>About Us</h2>
-  <p>We provide modern construction with quality and trust.</p>
-</div>
+  <p>We are professional builders providing high quality construction services.</p>
+</section>
 
-<!-- SERVICES -->
-<div class="section">
+<section class="services">
   <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">🏠 House Construction</div>
-    <div class="card">🏢 Commercial Buildings</div>
-    <div class="card">🛠 Renovation</div>
-  </div>
-</div>
 
-<!-- GALLERY -->
-<div class="section">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1565182999561-6eab6c0f71cf">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161b89a4d">
-  </div>
-</div>
+  <div class="service-box">🏠 House Construction</div>
+  <div class="service-box">🏢 Building Work</div>
+  <div class="service-box">🛠 Renovation</div>
 
-<!-- MAP -->
-<div class="section">
-  <h2>Our Location</h2>
-  <iframe src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-</div>
+</section>
 
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/917780263982">💬</a>
+<section class="gallery">
+  <h2>Our Work</h2>
+  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+  <img src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8">
+</section>
 
 <footer>
-  <h3>Sofi Builders</h3>
-  <p>Trusted Construction Company</p>
-  <p>© 2026 All Rights Reserved</p>
+  <p>© 2026 Sofi Builders and Developers</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/917780263982">💬</a>
 
 </body>
 </html>
